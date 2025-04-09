@@ -65,6 +65,7 @@ public class TroughPosition {
             //simulate time spent eating by generating a random integer between 1 and 100
             Random random = new Random();
             int TimeSpentEating = random.nextInt(100);
+            Thread.sleep(TimeSpentEating);
 
             //call the finishEating method
             this.finishEating();
